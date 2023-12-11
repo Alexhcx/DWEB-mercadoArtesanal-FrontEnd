@@ -1,0 +1,113 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+import Contato from './routes/contato.tsx'
+import Quemsomos from './routes/quemsomos.tsx'
+import Produtos from './routes/produtos.tsx'
+
+const BrowserRouter = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children:[
+      {
+        path: '/contato',
+        element: <Contato />,
+      },
+      {
+        path: '/quemsomos',
+        element: <Quemsomos />,
+      },
+      {
+        path: '/produtos',
+        element: <Produtos />,
+      },
+
+    ]
+  },
+
+]);
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <RouterProvider router={BrowserRouter}/>
+  </React.StrictMode>,
+)
+
+
+
+
+
+
+
+
+
+
+
+
+import { useState } from 'react'
+
+import Home from './routes/home'
+
+import './styles/main.css'
+import Header from './styles/header.module.css'
+import Footer from './styles/footer.module.css'
+
+import icone from './assets/icone.png'
+import facebook from './assets/facebook.png'
+import instagram from './assets/instagram.png'
+import twitter from './assets/twitter.png'
+
+import { Outlet, Link, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+function App() {
+
+  return (
+      <>
+      <header>
+      <nav className={Header.navbar}>
+        <ol className={Header.navol}>
+          <li className={Header.title}>
+            <span>
+              <Link to="/">
+                <img src={icone} alt="logo" className={Header.logo} />
+                <span>natuArte</span>
+              </Link>
+            </span>
+          </li>
+          <span className={Header.navcontainer}>
+            <li><Link to="/produtos">Produtos</Link></li>
+            <li><Link to="/quemsomos">Quem somos</Link></li>
+            <li><Link to="/contato">Contato</Link></li>
+          </span>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <Outlet />
+    </main>
+    <footer className={Footer.footer}>
+        <div className={Footer.natuarte}>
+          <h3>NATUARTE</h3>
+          <ol>
+            <li>Produtos</li>
+            <li>Quem somos</li>
+            <li>Contato</li>
+          </ol>
+        </div>
+        <div className={Footer.socialmedia}>
+          <h3>Redes Sociais</h3>
+          <ol>
+            <li><img src={facebook} alt="facebook" />Facebook</li>
+            <li><img src={instagram} alt="instagram" />Instagram</li>
+            <li><img src={twitter} alt="twwitter" />Twitter</li>
+          </ol>
+        </div>
+      </footer>
+    </>
+  )
+}
+
+export default App

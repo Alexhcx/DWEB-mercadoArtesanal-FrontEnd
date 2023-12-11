@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 119, 75, 0.4);
+    height: 100rem;
+    padding-top: 5.5rem;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: justify;
+}
+
+.main div h1{
+    padding: 1rem;
+}
+
+.main div p{
+    text-indent: 5rem;
+    padding: 1rem;
+}
+
+.main div ol{
+    list-style: disc;
+    padding:1rem;
+    margin-left: 7rem;
+
+}
+
+.main img{
+    display: flex;
+    height: 400px;
+    object-fit: cover;
+}

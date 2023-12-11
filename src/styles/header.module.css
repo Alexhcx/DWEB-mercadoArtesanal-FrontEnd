@@ -1,0 +1,70 @@
+@import url(https://db.onlinewebfonts.com/c/506ff1864a3cdecf43c4b1bc8c246b9c?family=Fun+City+Level+3+Basic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 62%;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.navol{
+    list-style: none;
+    background-color: rgb(62, 87, 47);
+    display: flex;
+    padding: 0.75rem;
+    background-size: cover;
+}
+
+
+
+.navol li{
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    color: aliceblue;
+    font-family: "Fun City Level 3 Basic";
+    font-size: 1.2rem;
+}
+
+.navol li a:visited {
+    color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.navol li:hover{
+    /* color: rgb(62, 87, 47); */
+    background-color: rgb(141, 156, 132);
+    border-radius: 0.5rem;
+}
+
+.navcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 15rem;
+    /* white-space: nowrap; */
+}
+
+.title{
+    font-size: 1.5rem;
+    color: aliceblue;
+    align-self: center;
+}
+
+.logo{
+    height: 4rem;
+    vertical-align: middle;
+    padding-right: 0.5rem ;
+}
+
