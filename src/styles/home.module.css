@@ -11,8 +11,7 @@
 .main{
     display: flex;
     background-color: rgb(160, 119, 75, 0.4);
-    height: 100rem;
-    padding-top: 5.5rem;
+    padding-top: 8rem;
     align-items: center;
     justify-content: center;
     font-family:Arial, Helvetica, sans-serif;
@@ -41,17 +40,21 @@
     background-color: rgb(160, 119, 75, 0.4);
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    overflow: hidden;
 }
 
 .main div div p{
-    font-size: large;
-    padding: 1rem;
-
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0rem 0rem 1rem 0rem;
 }
 
 .main div div h3{
     padding: 0.1rem;
-
+    text-align: center;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
 }
 
 .main div > div {
@@ -60,7 +63,8 @@
 
 .main div img{
     display: flex;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 0;
+    border-radius: 100rem;
+    padding: 1rem 1rem 0.5rem 1rem;
 }

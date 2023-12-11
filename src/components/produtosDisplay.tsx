@@ -29,8 +29,8 @@ export default function ProdutosDisplay() {
     <div>
       {produtos.map((produto) => (
         <div key={produto.id}>
-          <h3>{produto.nomeProduto}</h3>
           <img src={produto.imagem1} alt={produto.nomeProduto} />
+          <h3>{produto.nomeProduto.toUpperCase()}</h3>
           <p>R$ {numeral(produto.preco).format('0,0.00')}</p>
         </div>
       ))}
