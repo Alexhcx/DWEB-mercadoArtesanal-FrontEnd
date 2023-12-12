@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62%;
+}
+
+#filtroSemElementos{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.main{
+    background-color: rgb(160, 119, 75, 0.4);
+    padding-top: 8rem;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: justify;
+    max-height: 120rem;
+    min-height: 76.3rem;
+}
+
+.main div form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    max-width: 45rem;
+    margin-left: 73.5rem;
+    margin-right: 20rem;
+    
+}
+
+.main form input {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f0f0f0;
+    font-size: 1rem;
+    width: 100rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    
+}
+
+.main form input:focus {
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+.main div:nth-child(2) div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main div:nth-child(2) div div{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(160, 119, 75, 0.4);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 45rem;
+    margin: 2rem;
+}
+
+.main div:nth-child(2) div div a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main div:nth-child(2) div div div{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main div:nth-child(2) div div p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.main div:nth-child(2) div div > * {
+    flex-basis: calc(100% / 3);
+}
+
+.main div img{
+    display: flex;
+    height: 18rem;
+    object-fit: cover;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.1rem;
+    border-radius: 0%;
+}
+

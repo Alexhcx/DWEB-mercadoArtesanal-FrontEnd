@@ -1,18 +1,17 @@
-import Filtro from '../components/produtosFiltrados'
-import Produtos from '../components/produtosFiltro'
 import filtroStyles from '../styles/filtro.module.css'
 
 import Navigation from '../components/header'
 import Footer from '../components/footer'
+import ProdutoDetalhado1 from '../components/produtoDetalhado'
 
-export default function contato() {
+
+export default function produtoDetalhado() {
 
     return (
         <>
             <Navigation />
                 <main className={filtroStyles.main}>
-                    <Filtro produtosFiltrados={[]} isLoading={false} searched={false} />
-                    <Produtos />
+                    <ProdutoDetalhado1  />
                 </main>
             <Footer />
         </>

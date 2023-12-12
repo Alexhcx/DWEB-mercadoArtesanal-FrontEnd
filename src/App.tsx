@@ -1,9 +1,8 @@
-import { useState } from 'react'
-
 import Home from './routes/home'
 import Produtos from './routes/produtos'
 import Quemsomos from './routes/quemsomos'
 import Contato from './routes/contato'
+import ProdutoDetalhado from './routes/produtoDetalhado'
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -15,6 +14,7 @@ function App() {
           <Route path="/produtos" element={<Produtos />} />
           <Route path="/quemsomos" element={<Quemsomos />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/produtos/:id" element={<ProdutoDetalhado />} />
         </Routes>
   )
 }
