@@ -26,8 +26,6 @@
     background-size: cover;
 }
 
-
-
 .navol li{
     padding: 0.5rem 2rem 0.5rem 2rem;
     color: aliceblue;
@@ -51,7 +49,7 @@
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
-    margin-right: 15rem;
+    margin-right: 10rem;
 }
 
 .title{
@@ -66,3 +64,40 @@
     padding-right: 0.5rem ;
 }
 
+@media screen and (max-width: 768px){
+    .navol li{
+        font-size: 0.8rem;
+    }
+
+    .navcontainer{
+        margin-right: 1rem;
+    }
+
+    .logo{
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .navol li{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    .navcontainer{
+        margin-right: 0.1rem;
+    }
+
+    .logo{
+        height: 2rem;
+        margin: 0.1rem;
+    }
+    
+}
+
+@media screen and (max-width: 375px){
+    .navol li{
+        font-size: 0.6rem;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+}

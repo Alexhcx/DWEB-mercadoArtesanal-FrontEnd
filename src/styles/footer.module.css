@@ -72,3 +72,49 @@ img{
     margin-right: 1rem;
     opacity: 0.9;
 }
+
+@media screen and (max-width: 768px){
+    footer{
+        height: 15rem;
+    }
+
+    footer .natuarte{
+        margin-right: 5rem;
+    }
+
+    footer .socialmedia{
+        margin-left: 5rem;
+    }
+    footer ol li{
+        font-size: 1rem;
+    }
+    img{
+        height: 2rem;
+    }
+    footer h3{
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    footer{
+        height: 16rem;
+    }
+
+    footer .natuarte{
+        margin-right: 1rem;
+    }
+
+    footer .socialmedia{
+        margin-left: 1rem;
+    }
+
+    img{
+        height: 1.5rem;
+    }
+
+    footer ol li{
+        font-size: 0.9rem;
+    }
+}

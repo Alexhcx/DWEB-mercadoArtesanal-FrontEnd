@@ -4,7 +4,6 @@ import Navigation from '../components/header'
 import Footer from '../components/footer'
 import ProdutoDetalhado1 from '../components/produtoDetalhado'
 
-
 export default function produtoDetalhado() {
 
     return (

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
+import styles from '../styles/produtoDetalhado.module.css';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import numeral from "numeral";
 
 interface Produto {
   id: string;
@@ -16,7 +18,6 @@ function ProdutoDetalhado() {
 
   const [produto, setProduto] = useState<Produto | null>(null);
   const { id } = useParams<{ id: string }>();
-
 
   useEffect(() => {
     const fetchProduto = async () => {
@@ -38,12 +39,18 @@ function ProdutoDetalhado() {
   return (
     <div>
       <h2>{produto.nomeProduto}</h2>
-      <img src={produto.imagem1} alt={produto.nomeProduto} />
-      <p>{produto.descricao}</p>
-      <p>Tipo: {produto.tipoProduto}</p>
-      <p>Preço: {produto.preco}</p>
-      <img src={produto.imagem2} alt={`${produto.nomeProduto} imagem 2`} />
-      <img src={produto.imagem3} alt={`${produto.nomeProduto} imagem 3`} />
+      <div className={styles.produto}>
+          <div className={styles.imagens}>
+            <img src={produto.imagem1} alt={produto.nomeProduto} />
+            <img src={produto.imagem2} alt={`${produto.nomeProduto} imagem 2`} />
+            <img src={produto.imagem3} alt={`${produto.nomeProduto} imagem 3`} />
+         </div>
+          <div>
+            <p>{produto.descricao}</p>
+            <p>Tipo: {produto.tipoProduto}</p>
+            <p>Preço: R$ {numeral(produto.preco).format("0,0.00")}</p>
+          </div>
+        </div>
     </div>
   );
 };

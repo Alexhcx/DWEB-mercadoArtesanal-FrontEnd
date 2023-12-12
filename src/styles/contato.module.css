@@ -10,7 +10,7 @@
 
 .main{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     background-color: rgb(160, 119, 75, 0.4);
     height: 100rem;
     padding-top: 5.5rem;
@@ -29,7 +29,42 @@
     padding: 1rem;
 }
 
-iframe{
-    padding: 3rem;
-    border-radius: 1rem;
+.iframeContainer {
+    width: 480px;
+    height: 330px;
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        height: 80rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main{
+        height: 60rem;
+    }
+
+    .iframeContainer {
+        width: 400px;
+        height: 250px;
+    }
+    .main div h1{
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .iframeContainer {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .iframeContainer {
+        width: 300px;
+        height: 150px;
+    }
 }
