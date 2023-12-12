@@ -1,4 +1,4 @@
-import filtroStyles from '../styles/filtro.module.css'
+import filtroStyles from '../styles/produtoDetalhado.module.css'
 
 import Navigation from '../components/header'
 import Footer from '../components/footer'
