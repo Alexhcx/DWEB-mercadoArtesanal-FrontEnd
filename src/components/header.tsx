@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
 
+    //Este é um componente React escrito em TypeScript que renderiza um cabeçalho para uma página da web.
+
     return (
         <header>
             <nav className={styles.navbar}>

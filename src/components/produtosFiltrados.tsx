@@ -2,6 +2,8 @@ import numeral from "numeral";
 import Filtro from "../styles/filtro.module.css";
 import { Link } from 'react-router-dom';
 
+// Este é um componente React escrito em TypeScript chamado produtosFiltrados. Ele é usado para exibir detalhes de um produto específico que passou por um filtro.
+
 interface Produto {
   idProduto: string;
   nomeProduto: string;
@@ -34,7 +36,7 @@ const ProdutosFiltrados: React.FC<ProdutosFiltradosProps> = ({ produtosFiltrados
   return (
     <div>
       {produtosFiltrados.map((produto) => {
-        console.log(produto); // Adicione esta linha
+        console.log(produto);
         return (
           <div key={produto.idProduto}>
             <Link to={`/produtos/${produto.idProduto}`}>

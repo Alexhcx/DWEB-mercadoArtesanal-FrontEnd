@@ -3,6 +3,8 @@ import facebook from '../assets/facebook.png'
 import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
 
+//Este é um componente React escrito em TypeScript que renderiza um rodapé para uma página da web.
+
 export default function Footer() {
 
     return (

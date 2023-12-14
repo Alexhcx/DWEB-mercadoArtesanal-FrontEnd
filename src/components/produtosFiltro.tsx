@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import ProdutosFiltrados from "./produtosFiltrados";
 
+// Este é um componente React escrito em TypeScript chamado produtoFiltro. Esse componente é utilizado para filtras ou produtos disponiveis.
+
 interface Produto {
   idProduto: string;
   nomeProduto: string;
@@ -16,7 +18,7 @@ export default function ProdutosDisplay() {
   const [produtos, setProdutos] = useState<Produto[]>([]);
   const [filtro, setFiltro] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [searched, setSearched] = useState<boolean>(false); // Adicione esta linha
+  const [searched, setSearched] = useState<boolean>(false); 
 
   const getProdutos = async () => {
     try {

@@ -13,6 +13,8 @@ interface Produto {
   preco: number;
 }
 
+// Este é um componente React escrito em TypeScript chamado produtos. Ele exibe todos os produtos disponiveis.
+
 export default function ProdutosDisplay() {
   const [produtos, setProdutos] = useState<Produto[]>([]);
 

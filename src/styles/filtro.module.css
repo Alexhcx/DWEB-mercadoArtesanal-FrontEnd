@@ -126,6 +126,10 @@
 
 @media screen and (max-width: 1024px){
 
+    .main{
+        max-height: 150rem;
+    }
+
     .main div:nth-child(2) div div{
         max-width: 30rem;
     }

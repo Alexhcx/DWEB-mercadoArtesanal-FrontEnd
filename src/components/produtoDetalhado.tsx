@@ -4,6 +4,8 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import numeral from "numeral";
 
+// Este é um componente React escrito em TypeScript chamado ProdutoDetalhado. Ele é usado para exibir detalhes de um produto específico.
+
 interface Produto {
   id: string;
   nomeProduto: string;
